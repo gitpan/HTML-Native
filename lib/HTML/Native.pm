@@ -60,7 +60,7 @@ Perl data structure built using arrays and hashes.
 
 Consider the HTML element:
 
-    <div class="main">This is some text</div>
+    <div class="main">Hello world!</div>
 
 This could be constructed as an L<HTML::Native> object using:
 
@@ -209,8 +209,8 @@ use HTML::Native::Attributes;
 use strict;
 use warnings;
 
-use 5.9.5;
-our $VERSION = "1.0";
+use 5.009_005;
+our $VERSION = "1.0.1";
 
 our @EXPORT_OK = qw ( is_html_element is_html_attributes is_html_list );
 our %EXPORT_TAGS = ( all => [ @EXPORT_OK ] );

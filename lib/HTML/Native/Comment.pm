@@ -37,7 +37,7 @@ subject to entity encoding.
 =cut
 
 use Carp;
-use parent qw ( HTML::Native::Literal );
+use base qw ( HTML::Native::Literal );
 use mro "c3";
 use strict;
 use warnings;

@@ -70,7 +70,7 @@ tree.
 
 use List::Util qw ( first );
 use HTML::Native qw ( is_html_element );
-use parent qw ( HTML::Native );
+use base qw ( HTML::Native );
 use mro "c3";
 use strict;
 use warnings;
@@ -179,7 +179,7 @@ sub html {
 
 package HTML::Native::Document::XHTML10::Strict;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -200,7 +200,7 @@ sub new {
 
 package HTML::Native::Document::XHTML10::Transitional;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -221,7 +221,7 @@ sub new {
 
 package HTML::Native::Document::XHTML10::Frameset;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -242,7 +242,7 @@ sub new {
 
 package HTML::Native::Document::XHTML11;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -263,7 +263,7 @@ sub new {
 
 package HTML::Native::Document::HTML401::Strict;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -281,7 +281,7 @@ sub new {
 
 package HTML::Native::Document::HTML401::Transitional;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;
@@ -299,7 +299,7 @@ sub new {
 
 package HTML::Native::Document::HTML401::Frameset;
 
-use parent qw ( HTML::Native::Document );
+use base qw ( HTML::Native::Document );
 use mro "c3";
 use strict;
 use warnings;

@@ -41,7 +41,7 @@ L<HTML::Native::Attribute::ReadOnly> object.
 
 =cut
 
-use parent qw ( HTML::Native::Attribute );
+use base qw ( HTML::Native::Attribute );
 use mro "c3";
 use strict;
 use warnings;

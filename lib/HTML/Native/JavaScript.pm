@@ -52,7 +52,7 @@ and XHTML parsers.
 
 use HTML::Native qw ( is_html_attributes );
 use HTML::Native::Literal;
-use parent qw ( HTML::Native );
+use base qw ( HTML::Native );
 use mro "c3";
 use strict;
 use warnings;
@@ -104,7 +104,7 @@ package HTML::Native::JavaScript::Inline;
 
 use Carp::Clan qr/^HTML::Native::JavaScript/;
 use HTML::Native;
-use parent qw ( HTML::Native::List );
+use base qw ( HTML::Native::List );
 use strict;
 use warnings;
 
