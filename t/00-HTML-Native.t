@@ -72,7 +72,7 @@ BEGIN {
     isa_ok ( $heading, "HTML::Native" );
     is ( $$heading, "h1" );
     is ( $heading, "<h1>Welcome</h1>" );
-    @$heading = qw ( Hi );
+    @$heading = ( qw ( Hi ) );
     is ( $elem, "<div><h1>Hi</h1>Hello world</div>" );
   }
   delete $elem->[0];

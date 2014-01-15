@@ -428,7 +428,7 @@ L<HTML::Native::Attribute> has no way to inform the anonymous
 subroutine that its returned value should change.  For example:
 
     my $attr = HTML::Native::Attribute->new ( sub {
-      my @classes = qw ( active default );
+      my @classes = ( qw ( active default ) );
       return [ @classes ];
     } );
 

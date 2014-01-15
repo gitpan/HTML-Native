@@ -8,10 +8,10 @@ BEGIN {
     use_ok ( "HTML::Native::Document" );
 }
 
-foreach my $subclass qw ( XHTML10::Strict XHTML10::Transitional
-			  XHTML10::Frameset XHTML11
-			  HTML401::Strict HTML401::Transitional
-			  HTML401::Frameset ) {
+foreach my $subclass ( qw ( XHTML10::Strict XHTML10::Transitional
+			    XHTML10::Frameset XHTML11
+			    HTML401::Strict HTML401::Transitional
+			    HTML401::Frameset ) ) {
   my $doctype = "HTML::Native::Document::".$subclass;
 
   # new()

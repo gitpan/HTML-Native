@@ -5,6 +5,7 @@ all_from "lib/HTML/Native.pm";
 license "gpl_2";
 build_requires "Test::More";
 build_requires "Test::Exception";
+build_requires "JSON";
 
 requires "Carp";
 requires "Carp::Clan";
